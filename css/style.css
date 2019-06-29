@@ -1,0 +1,1464 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lora:400,700&subset=latin-ext');
+
+body{
+    background-color: #f4f2f3;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wr {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*...................Header.......................*/
+.header{
+    background-image: url(../img/slide11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#nav{
+    position: relative;
+   padding-top: 25px;
+}
+
+.header #baner{
+    display: block;
+    text-align: center;
+    padding-top: 130px;
+    width: 100%; 
+}
+
+.header #baner img {
+    max-width: 55%; 
+}
+
+#nav.navbar-fixed{
+   position: fixed;
+    top: 0;
+    background: #1a1a1a;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav.navbar-fixed#nav{
+  padding: 8px 0 12px 0;  
+}
+
+.brand img{
+    margin-top: 10px;
+}
+
+nav {
+    position: relative; 
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    position: relative; 
+    padding-top: 15px;
+}
+ 
+nav ul li a {
+    font:bold 17px 'EB Garamond', Arial, sans-serif;
+    padding: 12px 0;
+    margin: 0 13px;
+    color: #eae8e9;
+    text-transform: uppercase;     
+}
+
+nav ul li a:last-child{
+    margin-right: 5px;
+}
+
+#nav ul li a:hover {
+    color: #ffb606 !important;
+}
+
+
+#nav ul li.active a {
+    color: #ffb606 !important;
+}
+
+.active{
+    color: #ffb606 !important;
+}
+
+ #nav ul li a:visited, #nav ul li a:link{
+    text-decoration: none;  
+    color: #dfd9db;
+}
+
+.nav-list{
+    float: left;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    z-index: 9999;    
+}
+
+
+@media only screen and (max-width: 768px) {
+.nav-mobile {
+    display: block; 
+    }
+
+nav {
+    width: 100%; 
+    }
+    
+nav ul {
+    margin-top: 7px;
+    position: absolute;
+    z-index: 99999;
+    background: rgba(18, 18, 18, 0.97);
+    display: none;
+    width: 100%; 
+    padding: 0px 0 5px 0;
+    }
+    
+nav ul li {
+    float: none; 
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 10px 0;
+    }
+    
+#header nav ul li .red {
+     border-bottom: none; 
+    }
+
+nav ul li a:hover{
+    border-bottom: 0;      
+}
+    
+#mobile{
+    display: none;
+    }
+    
+    #nav_mob{
+    padding: 0;
+}
+
+.brand img{
+    margin-top: 5px;
+    padding-left: 10px;
+}
+    
+    #nav.navbar-fixed#nav {
+    padding: 5px 0 8px 0;
+}
+
+}
+
+
+@media screen and (min-width: 769px) {
+.nav-list {
+    display: block !important; } 
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 30px;
+  top: 35px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px; 
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out; 
+}
+
+#nav-toggle span:before {
+    top: -10px; 
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent; 
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0; 
+}
+
+#nav-toggle.active span:before {
+      transform: rotate(45deg); 
+}
+
+#nav-toggle.active span:after {
+      transform: rotate(-45deg); 
+}
+
+
+/*.................About....................*/
+.about, .our_beer{
+    margin: 60px auto;
+}
+
+ .title {
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.about div:last-child, .our_beer div:first-child{
+    width: 50%;
+    float: left;
+}
+
+.about div img, .our_beer div img{
+    max-width: 100%;
+}
+
+.about div img{
+    float: right;
+}
+
+.title hr {
+    width: 40px;
+    margin: 0 auto;
+    border: none;
+    background: #ffb606;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+.about div h2, .our_beer div h2{
+    font:600 40px 'EB Garamond', Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 55px 0px 10px 0;
+    color: #303131;
+}
+
+.our_beer div h2{
+    padding-top: 15px;
+}
+
+.about div p, .our_beer div p{
+    font:400 24px 'EB Garamond', Arial, sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #303131;
+}
+
+
+/*...................Welcome.....................*/
+.service{
+    background-image: url(../img/service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#service{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#service div{
+    width: 33.33333333%;
+    float: left;
+}
+
+#service div img{
+    max-width: 100%;
+    width: 120px;
+}
+
+#service div h3{
+     font:500 28px 'Lora', Arial, sans-serif;
+    padding-top: 10px;
+}
+
+/*...................Menu.....................*/
+
+.menu,.menu h2{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.menu h2{
+    text-transform: uppercase;
+    font:600 36px 'EB Garamond', Arial, sans-serif;
+}
+
+.tab{
+     background-image: url('../img/menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+    font:400 22px 'EB Garamond', Arial, sans-serif;
+}
+
+.tab li{
+    position: relative;
+    display: inline-block;
+    margin: 0 -2px;
+    background: rgba(0, 0, 0, 0.73);
+    padding: 30px 0;
+}
+
+.tab>li:last-child{
+    margin: 0 -3px; 
+}
+
+.tab li.active>a,  .tab>li>a:hover {
+    color: #ffb606;
+    border-right: 1px dashed #5d5d5c; 
+}
+
+.tab>li>a img{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.tab>li>a {
+    margin-right: 5px;
+    color: #fff;
+    border-right: 1px dashed #5d5d5c;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.tab>li:last-child a{
+    border: 0;
+    padding-right: 81px;
+}
+
+.menu h3{
+    text-align: center;
+    color: #303131;
+    text-transform: uppercase;
+    margin: 40px 0 10px 0;
+    font:600 26px 'Lora', Arial, sans-serif;
+}
+
+.menu hr{
+    width: 38%;
+    margin: 0 auto;
+    border: none;
+    background: #5d5d5c;
+    height: 2px;
+    margin-bottom: 15px;
+}
+
+.menu h4{
+    font:700 20px 'EB Garamond', Arial, sans-serif;
+    margin: 20px 0 -8px 0;
+    text-align: left;
+    color: #292929;
+}
+
+
+#menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+    padding: 12px 0 0 0;
+    vertical-align: top;
+    text-align: left;
+    font:400 18px 'Lora', Arial, sans-serif;
+    border-bottom: 1px dotted #000;
+    width: 92%;
+    color: #191919;
+}
+
+#menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#menu3 table, #menu2 table, #menu1 table  {
+    min-width: 100%;
+}
+
+ * h5{
+    color: #000 !important;
+    padding-top: 10px;
+}
+
+#menu3 table tr td:last-child, #menu2 table tr td:last-child, #menu1 table tr td:last-child  {
+    text-align: right;
+    vertical-align: bottom;
+    margin-left:  5px;
+}
+
+/*................Send email...................*/
+
+.mail{
+    background-image: url('../img/mail-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 55px 0 60px 0; 
+    
+}
+
+.mail h3{
+    color: #fff;
+    padding-bottom: 20px;
+    font:400 20px 'EB Garamond', Arial, sans-serif;
+}
+
+form #mail{
+    padding: 15px 0 12px 10px;
+    background: #f2f2f2;
+    width: 60%;
+   margin-right: 5%;
+    border-color: transparent;
+    font: 18px 'Lora', Arial, sans-serif;
+    border-radius: 0;
+}
+
+.error{
+    border: 2px solid #FF0004 !important;
+}
+
+
+
+.thank{
+   color: #fff;
+   position: relative;
+   font: 25px 'EB Garamond', Arial, sans-serif;
+   display: none;
+   margin-top: 10px;
+}
+
+form button {
+    cursor: pointer;
+    width: 30%;
+   
+    height: 55px;
+    background: #ffb606;
+    border: 0;
+  
+    font:700 20px 'EB Garamond', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+form button:hover{
+    background: #fff;
+    color: #ffb606;
+}
+
+/*................Contact...................*/
+
+.map {
+  position: relative;
+  height: 500px;
+  width: 60%;
+}
+
+#googleMap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.contact {
+    position: relative;
+    display: block;
+    width: 40%;
+    float: right;  
+}
+
+.contact h2{
+    font:600 30px 'EB Garamond', Arial, sans-serif;
+   padding: 80px 0 0 70px;
+    color: #303131;
+    text-transform: uppercase;
+}
+
+.contact ul{
+    padding: 20px 0 0 70px;
+}
+
+.contact ul a {
+    text-decoration: none;
+    color: #303131;
+}
+
+.contact ul li{
+    font:400 19px 'Lora', Arial, sans-serif;
+    padding-bottom: 25px;
+    color: #303131;
+}
+
+.contact ul li i{
+  color: #ffb606;
+    font-size: 26px;
+    padding-right: 5px;
+}
+
+.contact ul li:first-child i{
+    padding-right: 15px;
+}
+
+.contact ul li span{
+    font-weight: 600;
+}
+
+.contact ul li #open {
+    margin-left: 5px;
+}
+
+/*................Footer.................*/
+
+.footer {
+    position: relative; 
+    background-color: #2a2a2a;
+}
+
+.footer > .wr p {
+    padding: 25px;
+    text-align: center;
+    font:500 16px 'Lora', Arial, sans-serif;
+    color: #fff;  
+}
+
+/* ............Btn-up............*/
+.btn_up {
+    position: fixed;
+    bottom: -50px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #ffb606;
+    z-index: 99999;
+    outline: 0 !important;
+    transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    -webkit-transition: .4s;
+    cursor: pointer; 
+}
+
+.btn_up:hover {
+    background: #a57910; 
+}
+
+.btn_up:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.btn_up.active {
+  bottom: 50px; 
+}
+
+/*.............Responsive..........*/
+
+@media (max-width: 1110px) {
+    .wr {
+        padding: 0 10px;
+    }
+    
+    .about div img, .our_beer div img {
+        float: none;
+        padding-left: 12%;
+    }
+    
+    .about div p, .our_beer div p{
+       max-width: 97%; 
+    }
+    
+}
+
+@media (max-width: 1010px) { 
+    .our_beer div img {
+        padding-left: 9%;
+    }
+    }
+
+@media (max-width: 991px) {
+    .our_beer div img {
+        padding-left: 5%;
+    }
+    
+    .map {
+        height: 400px;
+    }
+    
+    .contact ul {
+        padding: 20px 0 0 30px;
+    }
+    
+    .contact h2{
+        padding: 40px 0 0 30px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .our_beer div img {
+        padding-left: 3%;
+    }
+    
+    .about div p, .our_beer div p {
+        max-width: 100%;
+        font-size: 23px;
+    }
+    
+    
+}
+
+@media (max-width: 940px) {
+    .header #baner img {
+        max-width: 63%;
+    }
+    
+    .about div img {
+        padding-left: 10%;
+    }
+   
+    .about div p, .our_beer div p {
+        font-size: 22px;
+    }
+    
+    
+}
+
+@media (max-width: 920px) {
+    .about div img {
+        padding-left: 8%;
+    }
+    
+    .about div p, .our_beer div p {
+        font-size: 22px;
+    }
+    
+    .about div p{
+        padding-right: 5px;
+    } 
+    
+    .our_beer div p{
+        padding-left: 5px;
+    }  
+}
+
+@media (max-width: 900px) {
+    .about div img {
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 880px) {
+     .about div img {
+        padding-left: 3%;
+    }
+    
+    .about div p, .our_beer div p {
+        font-size: 21px;
+    }
+    
+    .contact,.map {
+        width: 50%;
+    }       
+}
+
+@media (max-width: 860px) {
+     .about div img {
+        padding-left: 1%;
+    }
+    
+    .about div p, .our_beer div p {
+        font-size: 21px;
+    } 
+    
+    .our_beer div p{
+        padding-left: 20px;
+    }
+    
+     .about div p{
+        padding-right: 20px;
+    }
+    
+}
+
+@media (max-width: 830px) {
+    .our_beer div img {
+        padding-left: 0%;
+    }
+    
+    .about div img {
+     padding-left: 0%; 
+    }
+    
+    }
+
+@media (max-width: 800px) {
+    .about div p, .our_beer div p {
+        font-size: 19px;
+    }
+    
+    #service div img {
+        width: 100px;
+    }
+
+    #service div h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about, .our_beer {
+        margin: 40px auto;
+    }
+    
+    .about div h2, .our_beer div h2{
+        font-size: 36px;
+    }
+    
+    .our_beer div h2 {
+        padding-top: 10px;
+    }
+    
+    .our_beer div p {
+        padding-left: 10px;
+    }
+    
+    .about div p {
+        padding-right: 10px;
+    }
+    
+    .service {
+        padding: 40px 0 50px 0;
+        background-attachment: scroll;
+    }
+    
+    .header {
+        background-attachment: scroll;
+    }
+    
+    .header #baner {
+        padding-top: 165px;
+    }
+    
+    .header #baner img {
+        max-width: 70%;
+    }
+    
+    .menu, .menu h2 {
+        margin-bottom: 40px;
+    }
+    
+    .tab{
+        padding-top: 40px;
+        font-size: 20px;
+        background-attachment: scroll;
+    }
+    
+    .tab li{
+        padding: 20px 0;
+    }
+    
+    .tab li a{
+        padding: 0 15px;
+    }
+    
+    .tab>li:last-child a {   
+        padding-right: 65px;
+    }
+      
+    .mail{
+        padding: 40px 0;
+    }
+    
+}
+
+
+@media (max-width: 740px) {
+    .about div p, .our_beer div p {
+        font-size: 18px;
+    }
+    
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td{
+        width: 90%;
+    }  
+}
+
+
+@media (max-width: 710px) {
+     #service div h3 {
+        font-size: 23px;
+    }
+    
+    .contact ul li {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }    
+    
+    .contact ul li i {
+        font-size: 20px;
+    }
+    
+    .map {
+        height: 370px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .about div h2, .our_beer div h2 {
+        font-size: 32px;
+    }
+    
+    .title hr {
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 680px) {
+    .about div p, .our_beer div p {
+        font-size: 17px;
+    }
+    
+    #service div h3 {
+        font-size: 21px;
+    }
+    
+    form #mail {
+        padding: 10px 0 10px 10px;
+        font-size: 16px;
+    }
+    
+    form button {
+        font-size: 16px;
+        height: 45px; 
+    }
+    
+    .contact ul li {
+        font-size: 17px;
+        padding-bottom: 15px;
+    }
+    
+    .map {
+        height: 330px;
+    }
+    
+    .contact ul {
+        padding: 20px 0 0 20px;
+    }
+    
+     .contact h2{
+        padding: 25px 0 0 20px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .our_beer div h2 {
+        padding-top: 0px;
+    }
+    
+    .about div h2{
+        padding-top: 30px;
+    }
+    
+    #service div h3 {
+        font-size: 20px;
+    }
+    
+    .mail h3 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 620px) {
+    .about div p, .our_beer div p {
+        font-size: 16px;
+    }
+    
+    .contact ul li {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    
+    .contact ul li i {
+        margin-right: 0;
+    }
+    
+    .contact ul li:first-child i {
+        padding-right: 5px;
+    }
+    
+    .map {
+        height: 300px;
+    }
+    
+    .contact ul {
+        padding: 20px 0 0 15px;
+    }
+    
+     .contact h2{
+        padding: 30px 0 0 15px;
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header #baner img {
+        max-width: 78%;
+    }
+    
+     .header #baner {
+        padding-top: 160px;
+    }
+    
+    #service div {
+        float: none;
+        width: 100%;
+        margin-top: 35px;
+    }
+    
+    #service div:first-child{
+        margin-top: 0;
+    }
+    
+    #service div h3 {
+        font-size: 24px;
+    }
+    
+    #service div img {
+        width: 120px;
+    }    
+    
+   .menu h3 {
+        margin: 30px 0 5px 0;
+        font-size: 21px;
+    }
+    
+    .menu hr {
+        margin-bottom: 8px;
+        width: 50%;
+    }
+    
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+       font-size: 16px; 
+    }
+    
+    #menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span {
+    font-size: 15px;
+    }
+
+    .mail h3 {
+        font-size: 18px;
+    }
+    
+  
+}
+
+@media (max-width: 590px) {
+    .about div p, .our_beer div p {
+        font-size: 15px;
+    }
+    
+    .tab>li>a img {
+        width: 30px;
+    }
+    
+  .mail h3 {
+        font-size: 17px;
+    }
+    
+    form #mail {
+        padding: 8px 0 8px 10px;
+        font-size: 15px;
+    }
+    
+    form button {
+        font-size: 15px;
+        height: 40px;
+    }
+    
+}
+
+@media (max-width: 560px) {
+    .contact ul li {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    
+    .contact ul li i {
+        margin-right: 0;
+        font-size: 18px;
+    }
+    
+    .contact ul li:first-child i {
+        padding-right: 5px;
+    }
+    
+    .map {
+        margin-left: -5px;
+        height: 250px;
+    }
+    
+    .contact ul {
+        padding: 10px 0 0 5px;
+    }
+    
+     .contact h2{
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .about div h2, .our_beer div h2 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    
+   .tab{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    
+    .menu h2 {
+       font-size: 32px;
+    }
+    
+     .contact h2 {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+    
+    .tab>li>a img {
+        width: 25px;
+    }
+    
+    .tab li a{
+        padding: 0 10px;
+    }
+    
+     .tab>li:last-child a {   
+        padding-right: 50px;
+    }
+    
+    .menu hr {
+        width:  70%;
+    }
+    
+    .footer > .wr p {
+    font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+  .mail h3 {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (max-width: 530px) {
+    .about div h2, .our_beer div h2 {
+        font-size: 28px;
+    }
+    
+    .title hr {
+        margin-bottom: 5px;
+    }
+    
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+        width: 88%;
+    }  
+}
+
+
+@media (max-width: 510px) {
+     .header #baner img {
+        max-width: 88%;
+    }
+    
+    .header #baner {
+        padding-top: 150px;
+    }
+    
+    .about div p, .our_beer div p {
+        font-size: 14px;
+    }
+    
+    .mail h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 490px) {
+    .tab{
+        font-size: 18px;
+    }
+    
+    .tab li a{
+        padding: 0 5px;
+    }
+    
+     .tab>li:last-child a {   
+        padding-right: 40px;
+    }
+    
+     .tab>li>a img {
+         padding-right: 6px;
+    }
+      
+    .tab>li:last-child {
+        padding-bottom: 18px;
+    } 
+}
+
+@media (max-width: 485px) {
+   .about div p, .our_beer div p {
+        font-size: 13px;
+    } 
+    
+    .about div h2, .our_beer div h2 {
+        font-size: 26px;
+    }
+    
+    .title hr{
+        width: 30px;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+  .mail h3 {
+        font-size: 14px;
+    }
+    
+    .contact h2 {
+        font-size: 19px;
+    }
+    
+    .contact ul li {
+        font-size: 13px;
+    }
+    
+    .contact ul li i {
+        font-size: 16px;
+    }
+        
+    .contact ul {
+    padding: 10px 0 0 5px;
+    }
+}
+
+@media (max-width: 455px) {
+  .about div p, .our_beer div p {
+    font-size: 12px;
+}  
+}
+
+@media (max-width: 450px) {
+    .about div h2, .our_beer div h2 {
+        font-size: 25px;
+        padding-bottom: 4px;
+    }
+    
+    .title hr {
+        margin-bottom: 4px;
+    }
+    
+    .menu h3 {
+        margin: 25px 0 5px 0;
+        font-size: 20px;
+    }
+    
+    .menu hr {
+        margin-bottom: 5px;
+        width: 72%;
+    }
+    
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+        font-size: 15px;
+    }
+    
+    #menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span {
+    font-size: 14px;
+    }
+    
+    .menu h4 {
+        font-size: 18px;
+        margin: 15px 0 -8px 0;
+    }
+    
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+        width: 87%;   
+    }
+    
+    .mail h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 435px) {
+    .about div:last-child, .our_beer div:first-child {
+        display: none;
+    }
+    
+    .title {
+        width: 100%;
+    }
+    
+    .about div h2 {
+        padding-top: 0px;
+    }
+    
+    .about div h2, .our_beer div h2 {
+        font-size: 28px;
+        padding-bottom: 5px;
+    }
+    
+    .title hr {
+        margin-bottom: 5px;
+    }
+    
+    .about div p, .our_beer div p {
+        font-size: 17px;
+    }
+    
+    .our_beer div p, .about div p {
+        padding: 0px;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .mail h3 {
+        font-size: 17px;
+        text-align: center;
+    }
+   
+    #form{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    form #mail { 
+        width: 94%;
+        max-width:  100% !important;
+        margin-bottom: 15px;   
+    }
+    
+    form button {
+        width: 98%;
+        margin-left: -2%;
+       
+    }  
+}
+
+@media (max-width: 400px) {
+     .header #baner img {
+        max-width: 92%;
+    }
+    
+    .header #baner {
+        padding-top: 160px;
+    }
+    
+    .tab{
+        font-size: 17px;
+    }
+    
+    .tab li a{
+        padding: 0 4px;
+    }
+    
+     .tab>li:last-child a {   
+        padding-right: 25px;
+    }
+    
+     .tab>li>a img {
+         width: 22px;
+         padding-right: 5px;
+    }
+    
+    .tab>li:last-child {
+        margin: 0 -2px;
+        padding-bottom: 19px;
+    }  
+}
+    
+@media (max-width: 390px) {
+    .menu h3 {
+        font-size: 18px;
+    }    
+        
+    .menu h4 {
+        font-size: 16px;
+        margin: 12px 0 -8px 0;
+    }
+        
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+        font-size: 14px;
+        width: 86%;
+    }
+    
+    #menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span {
+    font-size: 13px;
+    }
+    
+    .footer > .wr p {
+        font-size: 13px;
+    }
+   
+}
+
+@media (max-width: 355px) {
+    .tab{
+        font-size: 16px;
+    }
+    
+    .tab>li:last-child a {   
+        padding-right: 20px;
+    } 
+    
+    .contact h2 {
+    font-size: 17px;
+    padding-top: 10px;
+    }
+    
+    .contact ul li {
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+    
+    .map {
+        height: 220px;
+    }
+    
+}
+    
+@media (max-width: 340px) {
+    .menu h3 {
+        font-size: 17px;
+    }
+        
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {
+        font-size: 13px;
+        width: 86%;
+    }
+    
+    #menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span {
+    font-size: 12px;
+    }
+    
+    
+    .footer > .wr p {
+        font-size: 12px;
+    }
+
+}
+    
+@media (max-width: 335px) {
+    .tab{
+        font-size: 15px;
+    }
+          
+    .tab>li:last-child {
+        padding-bottom: 17px;
+    }
+    
+    .contact h2 {
+        font-size: 16px;
+    }
+    
+     .contact ul li {
+        font-size: 11px;
+    }
+    
+    .map{
+        height: 210px;
+    }
+    
+}
+
+
+@media (max-width: 325px) {
+    .tab{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 319px) {   
+    #menu3 table tr td, #menu2 table tr td, #menu1 table tr td {  
+        font-size: 12px;
+        width: 85%;
+    } 
+    
+    #menu3 table tr td span, #menu2 table tr td span, #menu1 table tr td span {
+    font-size: 11px;
+    }
+    
+    form #mail { 
+         width: 93%;
+    }
+    
+    .contact ul li {
+        font-size: 10px;
+    }
+    
+    .map{
+        height: 205px;
+    }
+    
+    .footer > .wr p {
+        font-size: 12px;
+    }
+    
+}

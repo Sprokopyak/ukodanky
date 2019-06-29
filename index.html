@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <title>U KODAŇKY | Praha 10, obědová menu, polední menu, jídelní lístek</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="cs">
+    <meta name="description" content="Kodaňka se nachází v Kodaňská 47, Praha 10. Zde můžete se vochutnat chutné jídlo, objednat poledni a denní menu, a vzit s sebou nebo jednoduše pít pivo s přáteli.">
+    <meta name="keywords" content="Praha 10, bar, jídelní lístek, polední menu, restaurace, oběd, denní menu,  obědová menu, obědy">
+    
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="U KODAŇKY | Praha 10, obědová menu, polední menu, jídelní lístek"/> 
+    <meta property="og:image" content="http://ukodanky.cz/img/kodanka.jpg"/>
+    <meta property="og:site_name" content="U KODAŇKY"/>
+    <meta property="og:url" content="http://ukodanky.cz"/>
+    <meta property="og:description" content="Zde můžete se vochutnat chutné jídlo, objednat poledni menu , a vzit s sebou nebo jednoduše pít pivo s přáteli." /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <script src="js/googleanalytics.js"></script>
+    
+</head>
+<body>
+
+<!--..................Header..................--> 
+    
+<div class="header" >
+<div id="nav">
+<div class="clearfix wr "  id="nav_mob">
+    <a class="brand" id="logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list" id="menu">
+      <li id="menu-11"><a href="#about">O nás</a></li>
+      <li class="tablinks" onclick="openMenu(event, 'menu1');" id="menu-tab-1"><a href="#menu1" >Polední menu</a></li>
+      <li class="tablinks" onclick="openMenu(event, 'menu2')" id="menu-tab-2"><a href="#menu2" > Stalé menu</a></li>
+      <li class="tablinks" onclick="openMenu(event, 'menu3')" id="menu-tab-3"><a href="#menu3" >Nápoje</a></li>
+      <li id="menu-22"><a href="#contact">Kontakty</a></li>
+      </ul>
+    </nav>
+</div>  
+</div>
+<div id="baner">  
+<img  src="img/header.png" alt="U KODAŇKY"></div>
+</div>
+   
+<!--...................About.......................--> 
+    
+<div class="about clearfix wr" id="about">
+    <div class="title">
+        <h2>Naše historie</h2>
+        <hr>
+        <p>Kodaňka je velmi jednoduché místo s dobrým jídlem, služby děláme pravidelné jídlo a pivo, v naší restauraci se můžete věnovat i práci a k internetu se bezplatně připojit prostřednictvím WI-FI, Pojď a Přidej se k nám a uvidíte, jak je to možné.</p>
+    </div>
+    <div><img src="img/about.jpg" alt="U KODAŇKY"></div>
+</div>
+   
+ <!--............. Welcome .....................-->    
+    
+<div class="service clearfix">
+<div class="wr">
+<div id="service">
+    <div>
+        <img src="img/1-120x120.png" alt="Best Chef Cooks">
+        <h3>Nejlepší šef kuchař</h3>
+    </div>
+        
+    <div>
+        <img src="img/2-120x120.png" alt="Fresh Food">
+        <h3>Vždy čerstvé jidlo</h3>
+    </div>
+        
+    <div>
+        <img src="img/6-120x120.png" alt="Happy Clients">
+        <h3>Spokojení zákazníci</h3>
+    </div>
+</div>
+</div>
+</div>
+   
+<div class="our_beer wr clearfix">
+    <div><img src="img/our_beer.jpg" alt="U KODAŇKY PIVO"></div>
+    <div class="title">
+        <h2>Naše pivo</h2>
+        <hr>
+        <p>Po cele století šikovných českých právovárečníků pracovali na vytvoření své vlastní pražskih kultivarů, lišících se čistá a jemná chuť V důsledku jejich tvrdou práci na světě se objevila původní piva, které přinesl kapitál titul pražského Evropského vaření zasloužené. Zažít skutečnou chuť z Prahy. Zde v kodancì, opravdu rád pivo, protože každá odrůda je individualita, je jedinečný a originální.</p>
+    </div>
+</div>
+    
+<!--..................Menu...................-->
+    
+  <div class="menu clearfix" >
+  <ul class="tab">
+   <h2>menu</h2>
+    <li class="tablinks"  onclick="openMenu(event, 'menu1')" id="defaultOpen"><a href="#0"><img src="img/chef.png" alt="Polední menu">Polední menu</a></li>
+    <li class="tablinks" onclick="openMenu(event, 'menu2')" id="tab2"><a href="#0"><img src="img/food.png" alt="Stálé menu">Stálé menu</a></li>
+    <li class="tablinks" onclick="openMenu(event, 'menu3')" id="tab3"><a href="#0"><img src="img/drink.png" alt="Nápoje">Nápoje</a></li>
+  </ul>
+
+<div class="wr tab-content">
+<div id="menu1" class="tabcontent" >
+<h5 align="center"><font color="#000000"><b>Termín: 07.08 - 11.08.2017</b></font></h5>
+      <h3>Pondělí</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td><span>180g</span> Kuřecí prsíčka s broskví, opečený brambor </td>
+                  <td>90 Kč</td>
+              </tr>
+              <tr>
+                  <td><span>180g</span> Hovězí soté stroganoff, rýže   </td>
+                  <td>90 Kč</td>
+              </tr>
+               <tr>
+                  <td><span>180g</span> Smažený květák, tatarka, vařené brambory </td>
+                  <td>90 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h4>Polévky</h4>
+      <table>
+          <tbody>
+              <tr>
+                  <td> Hovězí vývar s masovýmí knedlíčky  </td>
+                  <td>25 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h3>Úterý</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td><span>180g</span> Krúti špíz se slanínou, hranolky </td>
+                  <td>90 Kč</td>
+              </tr>
+              <tr>
+                  <td><span>370g</span> Boloňské špagety s eídamem </td>
+                  <td>90 Kč</td>
+              </tr>
+               <tr>
+                  <td><span>420g</span> Vepřová játra na cibulce, tatarka, opečený brambor </td>
+                  <td>90 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h4>Polévky</h4>
+      <table>
+          <tbody>
+              <tr>
+                  <td> Selská polévka  </td>
+                  <td>25 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+            
+      <h3>Středa</h3>
+       <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td><span>180g</span> Vídeňský hovězí guláš, houskový knedlík </td>
+                  <td>90 Kč</td>
+              </tr>
+              <tr>
+                  <td><span>420g</span> Šunkové flíčky zapečené </td>
+                  <td>90 Kč</td>
+              </tr>
+               <tr>
+                  <td><span>7ks</span> Ovocné tvarohové knedlíky </td>
+                  <td>90 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h4>Polévky</h4>
+      <table>
+          <tbody>
+              <tr>
+                  <td> Čočková polévka </td>
+                  <td>25 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h3>Čtvrtek</h3>
+     <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td><span>180g</span> Moravský vrabec, špenát, bramborový knedlík </td>
+                  <td>90 Kč</td>
+              </tr>
+              <tr>
+                  <td><span>180g</span> Kuřecí prsíčka s rajčaty a bazalkou, hranolky </td>
+                  <td>90 Kč</td>
+              </tr>
+               <tr>
+                  <td><span>180g</span> Smažené žampíony, tatarka, vař. brambor</td>
+                  <td>90 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h4>Polévky</h4>
+      <table>
+          <tbody>
+              <tr>
+                  <td> Bramborová polévka nakyselo </td>
+                  <td>25 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+ 
+      <h3>Pátek</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td><span>220g</span> Jitrnička se zelím, št’ouchané brambory </td>
+                  <td>90 Kč</td>
+              </tr>
+              <tr>
+                  <td><span>180g</span> Vepřová grílovaná krkovíčka s hořčící, opečený brambor </td>
+                  <td>90 Kč</td>
+              </tr>
+               <tr>
+                  <td><span>370g</span> Penne se sýrovou omáčkou na smetaně  </td>
+                  <td>90 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <h4>Polévka</h4>
+      <table>
+          <tbody>
+              <tr>
+                  <td>Zelná polévka </td>
+                  <td>25 Kč</td>
+              </tr>
+          </tbody>
+      </table>
+</div>
+    
+<div id="menu2" class="tabcontent">
+     <h3>PŘEDKRMY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>120g</span> Rozpékaný pikantní hermelín se zeleninou a chlebem </td>
+                 <td>60 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>220g</span> Krabí pikantní koktejl s tousty podávaný na ledovém salátu s čerstvými rajčaty </td>
+                 <td>60 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>4ks</span> Smažené jalapeňos papričky plněné krémovým sýrem na ledovém salátě se zakysanou smetanou</td>
+                 <td>88 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>220g</span> Grilovaná klobása s hořčicí a křenem</td>
+                 <td>68 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>4ks</span> Bramboráčky se zakysanou smetanou </td>
+                 <td>48 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>HOVĚZÍ MASO</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>150g</span> Tatarský biftek s topinkami a česnekem</td>
+                 <td>127 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>220g</span> Vídeňská hovězí roštěná protknutá slaninou se sázeným vejcem a cibulkou, hranolky </td>
+                 <td>147 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>220g</span> Hovězí grilovaný steak z roštěnky na pepři s hořčicí. Opečené brambory nebo hranolky </td>
+                 <td>137 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>VEPŘOVÉ MASO</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>220g</span> Grilovaná krkovička na Dijonský způsob s vařeným bramborem </td>
+                 <td>118 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>220g</span> Vepřový špíz se zeleninou a slaninou. Příloha dle vašeho přání </td>
+                 <td>128 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>450g</span> Selská vepřová omeleta s masem, bramborem, rajčaty a sýrem </td>
+                 <td>118 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>POLÉVKY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>400g</span> Česnečka s pikantní uzeninou, sýrem, vaječným žloutkem a smaženým chlebem </td>
+                 <td>34 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>400g</span> Sýrová krémová polévka s tousty</td>
+                 <td>34 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>400g</span> Silný kuřecí vývar s masem a zeleninou</td>
+                 <td>34 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>SMAŽENÉ POKRMY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>1OOg</span> Smažený sýr (hermelín, eidam, niva), příloha, tatarská omáčka </td>
+                 <td>108 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>150g</span> Smažený vepřový nebo kuřecí řízek s vařeným bramborem a citronem </td>
+                 <td>108 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>180g</span> Smažené žampiony s opečeným bramborem a tatarskou omáčkou </td>
+                 <td>98 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>180g</span> Smažené rybí filé s vařenými bramborami</td>
+                 <td>108 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>KUŘECÍ MASO</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>220g</span> Kuřecí směs na pórku se sójovou omáčkou podávaná s rýží nebo hranolky </td>
+                 <td>118 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>370g</span> Zeleninové rizoto s kuřecím masek, sýrem a kyselou okurkou </td>
+                 <td>108 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>220g</span> Kuřecí steak se šunkou a sýrem podávaný s rýží </td>
+                 <td>118 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>220g</span> Kuřecí prsa CALIFORNIA s hranolky</td>
+                 <td>118 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>DOMÁCÍ BRAMBORÁKY NA VÝBĚR</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>450g</span> S kuřecím masem</td>
+                 <td>118 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>450g</span> S hermelínem</td>
+                 <td>118 Kč</td>
+             </tr>
+              <tr>
+                 <td><span>450g</span> S zeleninou</td>
+                 <td>118 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>TĚSTOVINY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>370g</span> Penne s kuřecím masem a žampiony na smetaně </td>
+                 <td>108 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>370g</span> Penne s rokfórovou omáčkou a parmezánem</td>
+                 <td>108 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>370g</span> Pikantní penne s kuřecím masem, zeleninou a česnekem </td>
+                 <td>108 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>370g</span> Špagety se zeleninou, arašídy a parmezánem</td>
+                 <td>108 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>370g</span> Špagety CARBONARA se slaninou, vejcem smetanou a sýrem </td>
+                 <td>108 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>370g</span> Špagety s kuřecím masem, listovým špenátem a sýrem na smetaně </td>
+                 <td>108 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>VELKÉ ZELENINOVÉ SALÁTY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>480g</span> Šalat s kuřecím masem, bylinkovým dressingem, sýrem a rozpečeným toustem </td>
+                 <td>118 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>480g</span> Salát s tuňákem, vejcem a italským dressingem</td>
+                 <td>128 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>MALÉ ZELENINOVÉ SALÁTY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td><span>180g</span> Salát s balkánským sýrem</td>
+                 <td>58 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>180g</span> Salát se šunkou a vejcem</td>
+                 <td>58 Kč</td>
+             </tr>
+             <tr>
+                 <td><span>180g</span> Krabí salát s dressingem (italský, bylinkový, česnekový) </td>
+                 <td>58 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+     
+     <h3>OMÁČKY</h3>
+     <hr>
+     <table>
+         <tbody>
+             <tr>
+                 <td>Houbová</td>
+                 <td>18 Kč</td>
+             </tr>
+             <tr>
+                 <td>Tatarská</td>
+                 <td>18 Kč</td>
+             </tr>
+             <tr>
+                 <td>Mexická</td>
+                 <td>18 Kč</td>
+             </tr>
+             <tr>
+                 <td>Sýrová</td>
+                 <td>18 Kč</td>
+             </tr>
+             <tr>
+                 <td>Česneková</td>
+                 <td>18 Kč</td>
+             </tr>
+         </tbody>
+     </table>
+</div>
+      
+<div id="menu3" class="tabcontent">
+      <h3>DESTILÁTY 0,4 dl</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td>Tuzemák</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Peprmintový likér</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Vaječný likér</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Griotka</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Jablko</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Vodka</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Amundsen Meloun, cocos&amp;ananas, límetka</td>
+                  <td>26 Kč</td>
+              </tr>
+              <tr>
+                  <td>Vodka Finlandia</td>
+                  <td>40 Kč</td>
+              </tr>
+              <tr>
+                  <td>Becherovka</td>
+                  <td>40 Kč</td>
+              </tr>
+              <tr>
+                  <td>Fernet Stock, citrus, hruška, s matou</td>
+                  <td>40 Kč</td>
+              </tr>             
+              <tr>
+                  <td>Morávska švestka/hruška</td>
+                  <td>40 Kč</td>
+              </tr>             
+              <tr>
+                  <td>Stará Myslivecká</td>
+                  <td>40 Kč</td>
+              </tr>             
+              <tr>
+                  <td>Gin Beefeater</td>
+                 <td>40 Kč</td>
+              </tr>
+              <tr>
+                  <td>Captain Morgan</td>
+                 <td>40 Kč</td>
+              </tr>
+              <tr>
+                  <td>Ballantine’s</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Jim Beam</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Metaxa</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Jamesom</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Tullamore Dew</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Jágermejster</td>
+                 <td>50 Kč</td>
+              </tr>
+              <tr>
+                  <td>Jack Daniel’s (medový)</td>
+                 <td>60 Kč</td>
+              </tr>
+              <tr>
+                  <td>Bohemia Sekt Demi</td>
+                 <td>220 Kč</td>
+              </tr>           
+          </tbody>
+      </table>
+      
+      <h3>VÍNO</h3>
+      <hr>
+      <table>
+           <tbody>
+               <tr>
+                   <td>Bílé rozlévané 0,2 l</td>
+                   <td>28 Kč</td>
+               </tr>
+        
+                <tr>
+                   <td>Červené rozlévané 0,2 l</td>
+                   <td>28 Kč</td>
+               </tr>
+     
+           </tbody>
+       </table>
+      
+      <h3>PIVO</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td>Staropramen 10º  0,5l</td>
+                  <td>25 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Staropramen 10º  0,3l</td>
+                  <td>16 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Staropramen Ležák 12º  0,5l</td>
+                  <td>27 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Staropramen Ležák 12º  0,3l</td>
+                  <td>18 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Braník 11º  0,5l</td>
+                  <td>25 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Braník 11º  0,3l</td>
+                  <td>16 Kč</td>
+              </tr>
+              
+              <tr>
+                  <td>Staropramen nealko 0,5l</td>
+                  <td>25 Kč</td>
+              </tr>
+
+          </tbody>
+      </table>
+      
+      <h3>NEALKO</h3>
+      <hr>
+      <table>
+          <tbody>
+              <tr>
+                  <td>Coca Cola 0,33l</td>
+                  <td>30 Kč</td>
+              </tr>
+               <tr>
+                  <td>Fanta 0,33l</td>
+                  <td>30 Kč</td>
+              </tr>         
+              <tr>
+                  <td>Sprite 0,33 l</td>
+                  <td>30 Kč</td>
+              </tr> 
+              <tr>
+                  <td>Tonik 0,25 l</td>
+                  <td>30 Kč</td>
+              </tr>
+               <tr>
+                  <td>Mottoni (jemně perlivá, neperlivá, perlivá) 0,33l</td>
+                  <td>20 Kč</td>
+              </tr>
+              
+          </tbody>
+      </table>
+      
+      <h3>KÁVA</h3>
+      <hr>
+      <table>
+           <tbody>
+               <tr>
+                   <td>Espresso</td>
+                   <td>25 Kč</td>
+               </tr>
+               <tr>
+                   <td>Nescafe</td>
+                   <td>20 Kč</td>
+               </tr>   
+               <tr>
+                   <td>Turecká</td>
+                   <td>15 Kč</td>
+               </tr>
+               <tr>
+                   <td>Čaj černý, zelený, ovocný</td>
+                   <td>15 Kč</td>
+               </tr>
+              
+           </tbody>
+       </table>
+</div>
+</div>
+</div>
+
+<!--..................Send email...................-->
+    
+<div class="mail">
+<div class="wr">
+    <h3>Zadejte svůj e-mail a nechte si pravidelně zasílat polední nabídku a akční novinky.</h3>
+        
+    <form id="form" data-them="Тема" action="sendmail.php" data-show=".thank">
+  
+    <input id="mail" type="email" name="email" data-name="E-mail:" data-required placeholder="Zde zadejte Váš e-mail">
+   
+    <button type="submit"><span>Odeslat</span></button>
+   
+    </form>
+    <div class="thank">Děkujeme, že jste opustil svůj E-mail. </div>
+</div>
+</div>  
+    
+<!--..........Contact................. -->
+
+<div class="clearfix wr" id="contact">  
+<div class="contact clearfix">
+<h2>Naše kontakty</h2>
+<ul>
+    <li><i class="fa fa-map-marker"></i> Kodaňská 47, Vršovice, Praha 10</li>
+    <li ><i class="fa fa-calendar-check-o"></i><span id="open">Otevírací doba:</span>  <br>
+    <span> Po - Pá</span> 11:00  - 23:00 hod. <br>
+    <span> So</span>  na objednání  <br>
+    <span> Ne</span>  17:00-23:00 hod. 
+    </li>
+    
+    <li><a href="mailto:Levytskya@seznam.cz"><i class="fa fa-envelope-o"></i> Levytskya@seznam.cz </a></li>
+    
+    <li><i class="fa fa-phone"></i><a href="tel:+420728290366"> +420 728 290 366</a></li>
+</ul>
+</div>                                                                                       
+<div class="map clearfix">
+     <div id="googleMap" ></div>          
+</div>              
+</div>         
+                         
+<!--..........Footer................. -->                         
+                                                 
+<div class="footer clearfix">
+    <div class="wr">
+        <p>© 2017 U Kodaňky. Všechna práva vyhrazena</p>
+    </div>
+</div>    
+      
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+<!--  google map-->
+<script src="js/googlemap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFBntRMlJp6C6FFlgAAOb-C5DGoWQZRlk&callback=myMap"></script>
+<script src="js/script.js"></script>
+   
+</body>
+</html>
